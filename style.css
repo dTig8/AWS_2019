@@ -1,0 +1,54 @@
+
+html{
+    width :100%;
+height: 100%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 90%;
+  grid-template-rows: 10% auto;
+  grid-gap: 0px;
+}
+
+.nav a{
+  display: block;
+  color: green;
+  text-align: left;
+  padding: 1px 5px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.header{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background: #69F;
+  background-color:black;
+  color:white;
+  text-align:center;
+  padding: 0%;
+}
+
+.nav {
+  background: #6F9;
+  height: 100%;
+}
+.section {
+  background: #F69;
+  height:400px;
+  height: 100%;
+}
+/* Change color on hover */
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+    
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    nav, section {
+      width: 100%;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AnwSys JS DemoApp</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>
+    <script type="text/javascript" src="./script.js" ></script>
+    
+</head>
+
+<body>
+    <div id="app">
+        <div class="grid-container">
+            <div class="grid-element header">
+                <h1>WhatsSlack</h1>
+            </div>
+            <div class="grid-element nav">
+                    <h3>Channels</h3>
+                    <form id="selectChannelPageForm">
+                        <topic>Page:</topic>
+                        <input class="numberInput" type="number" name="page" min="0" value="0">
+                        <input type="submit" value="Open">
+                    </form>
+                    <div class="list" id="channelList">
+                    </div><br>
+                    <form id="newChannelForm"  >
+                            <topic>Create a new Channel:</topic><br>
+                            <input type="text" name="channel" placeholder="Enter new Channel"><br>
+                            <input type="text" name="topic" placeholder="Topic"><br>
+                            <input type="submit" value="Create">        
+                    </form>
+            </div>
+            <div class="grid-element section">
+                    <channel> 
+                            <h1>Current Channel:  <span id="currentChannel">NONE</span>
+                            <form id="enterChannelForm">
+                                <input type="text" placeholder="Enter username" name="email">
+                                <button type="submit">Join</button>
+                            </form>
+                    </channel>
+                    
+                            
+            </div>
+        </div>
+    </div>
+</body>
+</html>
