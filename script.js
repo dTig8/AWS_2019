@@ -9,7 +9,7 @@ var creator;
 function sendGet(addToUrl){
     return $.ajax({
         url: baseUrl+addToUrl,
-        headers: {"X-Group-Token": "Enter Token",},
+        headers: {"X-Group-Token": accessToken,},
         dataType: "json",
         method: "GET",
     });
